@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB" customClass="MapInfoWindowView" customModule="TeamvoyTestApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iAS-3y-mOX">
+                    <rect key="frame" x="5" y="25" width="365" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yiE-vU-oUc">
+                    <rect key="frame" x="5" y="55.5" width="365" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to see sunrise and sunset information" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PyJ-Kj-dTz">
+                    <rect key="frame" x="5" y="86" width="365" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="PyJ-Kj-dTz" firstAttribute="trailing" secondItem="iAS-3y-mOX" secondAttribute="trailing" id="2fi-Lv-LxV"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="iAS-3y-mOX" secondAttribute="trailing" constant="5" id="4N3-2G-mNp"/>
+                <constraint firstItem="PyJ-Kj-dTz" firstAttribute="leading" secondItem="iAS-3y-mOX" secondAttribute="leading" id="9p0-rg-dG5"/>
+                <constraint firstItem="yiE-vU-oUc" firstAttribute="top" secondItem="iAS-3y-mOX" secondAttribute="bottom" constant="10" id="B9y-p7-V8N"/>
+                <constraint firstItem="yiE-vU-oUc" firstAttribute="leading" secondItem="iAS-3y-mOX" secondAttribute="leading" id="SIx-aN-5Xa"/>
+                <constraint firstItem="PyJ-Kj-dTz" firstAttribute="top" secondItem="yiE-vU-oUc" secondAttribute="bottom" constant="10" id="fB1-Ii-Hc5"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="PyJ-Kj-dTz" secondAttribute="bottom" constant="10" id="fkQ-rf-eR3"/>
+                <constraint firstItem="iAS-3y-mOX" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="5" id="tNt-RJ-6Hf"/>
+                <constraint firstItem="yiE-vU-oUc" firstAttribute="trailing" secondItem="iAS-3y-mOX" secondAttribute="trailing" id="toy-4b-ozD"/>
+                <constraint firstItem="iAS-3y-mOX" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="5" id="zrP-6m-VON"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="10"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="placeAdressLabel" destination="yiE-vU-oUc" id="BHx-i7-TGK"/>
+                <outlet property="placeNameLabel" destination="iAS-3y-mOX" id="qjW-PT-PkF"/>
+            </connections>
+            <point key="canvasLocation" x="169" y="29"/>
+        </view>
+    </objects>
+</document>

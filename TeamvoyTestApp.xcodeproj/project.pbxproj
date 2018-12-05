@@ -1,0 +1,753 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F1BBAB7A19C9C5CC58E32E95 /* Pods_TeamvoyTestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15CBC5C283932C3D7D60E88B /* Pods_TeamvoyTestApp.framework */; };
+		FA92789C21B6A40500F72831 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA92789B21B6A40500F72831 /* AppDelegate.swift */; };
+		FA92789E21B6A40500F72831 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA92789D21B6A40500F72831 /* MapViewController.swift */; };
+		FA9278A121B6A40500F72831 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA92789F21B6A40500F72831 /* Main.storyboard */; };
+		FA9278A321B6A40800F72831 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA9278A221B6A40800F72831 /* Assets.xcassets */; };
+		FA9278A621B6A40800F72831 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA9278A421B6A40800F72831 /* LaunchScreen.storyboard */; };
+		FA927A6121B6A4B700F72831 /* RequestGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9278B121B6A4B400F72831 /* RequestGenerator.swift */; };
+		FA927A6221B6A4B700F72831 /* APIClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9278B321B6A4B400F72831 /* APIClientProtocol.swift */; };
+		FA927A6321B6A4B700F72831 /* APIRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9278B421B6A4B400F72831 /* APIRequestProtocol.swift */; };
+		FA927A6421B6A4B700F72831 /* EndPointProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9278B521B6A4B400F72831 /* EndPointProtocol.swift */; };
+		FA927A6521B6A4B700F72831 /* ApiParametersProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9278B621B6A4B400F72831 /* ApiParametersProtocol.swift */; };
+		FA927B4521B6A4B800F72831 /* StoryboardIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA927A0721B6A4B600F72831 /* StoryboardIdentifiable.swift */; };
+		FA927B4A21B6A4B800F72831 /* AlertDisplayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA927A0C21B6A4B600F72831 /* AlertDisplayable.swift */; };
+		FA927B6921B6A4B800F72831 /* StoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA927A4B21B6A4B700F72831 /* StoryboardExtension.swift */; };
+		FA927B6F21B6A4B800F72831 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA927A5821B6A4B700F72831 /* ViewControllerExtension.swift */; };
+		FA927B7221B6A4B800F72831 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA927A5D21B6A4B700F72831 /* StringExtension.swift */; };
+		FAF02DDE21B6EEC500940099 /* GoogleMapHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF02DD721B6E6E300940099 /* GoogleMapHelper.swift */; };
+		FAF02DE221B6F18C00940099 /* GoogleKeysService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF02DE121B6F18C00940099 /* GoogleKeysService.swift */; };
+		FAF02DE421B6F9C100940099 /* ProgressHUDProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF02DE321B6F9C100940099 /* ProgressHUDProtocol.swift */; };
+		FAF02DE621B6FB1100940099 /* LocationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF02DE521B6FB1000940099 /* LocationHelper.swift */; };
+		FAF02DE821B700E800940099 /* AutocompliteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF02DE721B700E800940099 /* AutocompliteService.swift */; };
+		FAF02DEB21B70AC900940099 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF02DEA21B70AC900940099 /* UIViewExtension.swift */; };
+		FAF02DEE21B70B3600940099 /* TextFiledExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF02DED21B70B3600940099 /* TextFiledExtension.swift */; };
+		FAF02DF121B70EBA00940099 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF02DF021B70EBA00940099 /* Place.swift */; };
+		FAF02DF421B715F500940099 /* MapInfoWindowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF02DF321B715F500940099 /* MapInfoWindowView.swift */; };
+		FAF02DF621B7162200940099 /* MapInfoWindowView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAF02DF521B7162200940099 /* MapInfoWindowView.xib */; };
+		FAF02DF821B716FB00940099 /* NibLodableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF02DF721B716FB00940099 /* NibLodableView.swift */; };
+		FAF02DFD21B72A3F00940099 /* SunriseAndSunsetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF02DFC21B72A3F00940099 /* SunriseAndSunsetViewController.swift */; };
+		FAF02E0121B72F5100940099 /* SunriseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF02E0021B72F5100940099 /* SunriseView.swift */; };
+		FAF02E0521B72FB500940099 /* SunriseSunsetNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF02E0421B72FB500940099 /* SunriseSunsetNetworkService.swift */; };
+		FAF02E0721B72FEA00940099 /* GetSunriseSunsetParamaters.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF02E0621B72FEA00940099 /* GetSunriseSunsetParamaters.swift */; };
+		FAF02E0921B7306800940099 /* SunriseSunset.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF02E0821B7306800940099 /* SunriseSunset.swift */; };
+		FAF02E0B21B733FA00940099 /* SunrisePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF02E0A21B733FA00940099 /* SunrisePresenter.swift */; };
+		FAF02E0E21B7AD2F00940099 /* UINavigationBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF02E0D21B7AD2F00940099 /* UINavigationBarExtension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0E0F789C181060AB96C0D239 /* Pods-TeamvoyTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeamvoyTestApp.debug.xcconfig"; path = "Target Support Files/Pods-TeamvoyTestApp/Pods-TeamvoyTestApp.debug.xcconfig"; sourceTree = "<group>"; };
+		15CBC5C283932C3D7D60E88B /* Pods_TeamvoyTestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeamvoyTestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2DB3ABA428C3543D0A3CEFE /* Pods-TeamvoyTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeamvoyTestApp.release.xcconfig"; path = "Target Support Files/Pods-TeamvoyTestApp/Pods-TeamvoyTestApp.release.xcconfig"; sourceTree = "<group>"; };
+		FA92789821B6A40500F72831 /* TeamvoyTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeamvoyTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA92789B21B6A40500F72831 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA92789D21B6A40500F72831 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		FA9278A021B6A40500F72831 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA9278A221B6A40800F72831 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA9278A521B6A40800F72831 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA9278A721B6A40800F72831 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA9278B121B6A4B400F72831 /* RequestGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestGenerator.swift; sourceTree = "<group>"; };
+		FA9278B321B6A4B400F72831 /* APIClientProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClientProtocol.swift; sourceTree = "<group>"; };
+		FA9278B421B6A4B400F72831 /* APIRequestProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequestProtocol.swift; sourceTree = "<group>"; };
+		FA9278B521B6A4B400F72831 /* EndPointProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPointProtocol.swift; sourceTree = "<group>"; };
+		FA9278B621B6A4B400F72831 /* ApiParametersProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiParametersProtocol.swift; sourceTree = "<group>"; };
+		FA927A0721B6A4B600F72831 /* StoryboardIdentifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardIdentifiable.swift; sourceTree = "<group>"; };
+		FA927A0C21B6A4B600F72831 /* AlertDisplayable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertDisplayable.swift; sourceTree = "<group>"; };
+		FA927A4B21B6A4B700F72831 /* StoryboardExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardExtension.swift; sourceTree = "<group>"; };
+		FA927A5821B6A4B700F72831 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
+		FA927A5D21B6A4B700F72831 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		FAF02DD721B6E6E300940099 /* GoogleMapHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapHelper.swift; sourceTree = "<group>"; };
+		FAF02DE121B6F18C00940099 /* GoogleKeysService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleKeysService.swift; sourceTree = "<group>"; };
+		FAF02DE321B6F9C100940099 /* ProgressHUDProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressHUDProtocol.swift; sourceTree = "<group>"; };
+		FAF02DE521B6FB1000940099 /* LocationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationHelper.swift; sourceTree = "<group>"; };
+		FAF02DE721B700E800940099 /* AutocompliteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutocompliteService.swift; sourceTree = "<group>"; };
+		FAF02DEA21B70AC900940099 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		FAF02DED21B70B3600940099 /* TextFiledExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFiledExtension.swift; sourceTree = "<group>"; };
+		FAF02DF021B70EBA00940099 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		FAF02DF321B715F500940099 /* MapInfoWindowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapInfoWindowView.swift; sourceTree = "<group>"; };
+		FAF02DF521B7162200940099 /* MapInfoWindowView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapInfoWindowView.xib; sourceTree = "<group>"; };
+		FAF02DF721B716FB00940099 /* NibLodableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLodableView.swift; sourceTree = "<group>"; };
+		FAF02DFC21B72A3F00940099 /* SunriseAndSunsetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunriseAndSunsetViewController.swift; sourceTree = "<group>"; };
+		FAF02E0021B72F5100940099 /* SunriseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunriseView.swift; sourceTree = "<group>"; };
+		FAF02E0421B72FB500940099 /* SunriseSunsetNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunriseSunsetNetworkService.swift; sourceTree = "<group>"; };
+		FAF02E0621B72FEA00940099 /* GetSunriseSunsetParamaters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSunriseSunsetParamaters.swift; sourceTree = "<group>"; };
+		FAF02E0821B7306800940099 /* SunriseSunset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunriseSunset.swift; sourceTree = "<group>"; };
+		FAF02E0A21B733FA00940099 /* SunrisePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunrisePresenter.swift; sourceTree = "<group>"; };
+		FAF02E0D21B7AD2F00940099 /* UINavigationBarExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationBarExtension.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA92789521B6A40500F72831 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1BBAB7A19C9C5CC58E32E95 /* Pods_TeamvoyTestApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		586DE28EC9530FB27FA7A49C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				15CBC5C283932C3D7D60E88B /* Pods_TeamvoyTestApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D5CB7229A8A7E7A52E0C9CCC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0E0F789C181060AB96C0D239 /* Pods-TeamvoyTestApp.debug.xcconfig */,
+				C2DB3ABA428C3543D0A3CEFE /* Pods-TeamvoyTestApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FA92788F21B6A40500F72831 = {
+			isa = PBXGroup;
+			children = (
+				FA92789A21B6A40500F72831 /* TeamvoyTestApp */,
+				FA92789921B6A40500F72831 /* Products */,
+				D5CB7229A8A7E7A52E0C9CCC /* Pods */,
+				586DE28EC9530FB27FA7A49C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FA92789921B6A40500F72831 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA92789821B6A40500F72831 /* TeamvoyTestApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA92789A21B6A40500F72831 /* TeamvoyTestApp */ = {
+			isa = PBXGroup;
+			children = (
+				FAF02DC821B6E6E200940099 /* Helpers */,
+				FA927A0621B6A4B600F72831 /* Protocols */,
+				FA927A3621B6A4B700F72831 /* Extensions */,
+				FA9278AE21B6A4B400F72831 /* APIClient */,
+				FA9278B721B6A4B400F72831 /* Presentation */,
+				FA9278AD21B6A43100F72831 /* SupportingFiles */,
+			);
+			path = TeamvoyTestApp;
+			sourceTree = "<group>";
+		};
+		FA9278AD21B6A43100F72831 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				FA92789B21B6A40500F72831 /* AppDelegate.swift */,
+				FA9278A221B6A40800F72831 /* Assets.xcassets */,
+				FA9278A421B6A40800F72831 /* LaunchScreen.storyboard */,
+				FA9278A721B6A40800F72831 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		FA9278AE21B6A4B400F72831 /* APIClient */ = {
+			isa = PBXGroup;
+			children = (
+				FA9278B221B6A4B400F72831 /* Protocols */,
+				FA9278B121B6A4B400F72831 /* RequestGenerator.swift */,
+			);
+			path = APIClient;
+			sourceTree = "<group>";
+		};
+		FA9278B221B6A4B400F72831 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FA9278B321B6A4B400F72831 /* APIClientProtocol.swift */,
+				FA9278B421B6A4B400F72831 /* APIRequestProtocol.swift */,
+				FA9278B521B6A4B400F72831 /* EndPointProtocol.swift */,
+				FA9278B621B6A4B400F72831 /* ApiParametersProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		FA9278B721B6A4B400F72831 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				FA927B7521B6A63A00F72831 /* Map */,
+				FAF02DFA21B729C400940099 /* SunriseAndSunset */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		FA927A0621B6A4B600F72831 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FAF02DE321B6F9C100940099 /* ProgressHUDProtocol.swift */,
+				FA927A0721B6A4B600F72831 /* StoryboardIdentifiable.swift */,
+				FAF02DF721B716FB00940099 /* NibLodableView.swift */,
+				FA927A0C21B6A4B600F72831 /* AlertDisplayable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		FA927A3621B6A4B700F72831 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FA927A3721B6A4B700F72831 /* UI */,
+				FA927A5B21B6A4B700F72831 /* Foundation */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FA927A3721B6A4B700F72831 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				FAF02E0C21B7AD0700940099 /* NavigationBar */,
+				FAF02DEC21B70B2000940099 /* TextFiled */,
+				FAF02DE921B70AB600940099 /* View */,
+				FA927A4A21B6A4B700F72831 /* Storyboard */,
+				FA927A5721B6A4B700F72831 /* ViewController */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		FA927A4A21B6A4B700F72831 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				FA927A4B21B6A4B700F72831 /* StoryboardExtension.swift */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		FA927A5721B6A4B700F72831 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FA927A5821B6A4B700F72831 /* ViewControllerExtension.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		FA927A5B21B6A4B700F72831 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				FA927A5D21B6A4B700F72831 /* StringExtension.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		FA927B7521B6A63A00F72831 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				FAF02DF221B714AC00940099 /* Views */,
+				FAF02DEF21B70E9500940099 /* Models */,
+				FA927B7621B6A66000F72831 /* Controllers */,
+				FA92789F21B6A40500F72831 /* Main.storyboard */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		FA927B7621B6A66000F72831 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA92789D21B6A40500F72831 /* MapViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FAF02DC821B6E6E200940099 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FAF02DE521B6FB1000940099 /* LocationHelper.swift */,
+				FAF02DD721B6E6E300940099 /* GoogleMapHelper.swift */,
+				FAF02DE121B6F18C00940099 /* GoogleKeysService.swift */,
+				FAF02DE721B700E800940099 /* AutocompliteService.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		FAF02DE921B70AB600940099 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FAF02DEA21B70AC900940099 /* UIViewExtension.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FAF02DEC21B70B2000940099 /* TextFiled */ = {
+			isa = PBXGroup;
+			children = (
+				FAF02DED21B70B3600940099 /* TextFiledExtension.swift */,
+			);
+			path = TextFiled;
+			sourceTree = "<group>";
+		};
+		FAF02DEF21B70E9500940099 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FAF02DF021B70EBA00940099 /* Place.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FAF02DF221B714AC00940099 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FAF02DF321B715F500940099 /* MapInfoWindowView.swift */,
+				FAF02DF521B7162200940099 /* MapInfoWindowView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FAF02DFA21B729C400940099 /* SunriseAndSunset */ = {
+			isa = PBXGroup;
+			children = (
+				FAF02E0321B72F7700940099 /* NetworkServices */,
+				FAF02E0221B72F6200940099 /* Models */,
+				FAF02DFF21B72F2A00940099 /* Protocols */,
+				FAF02DFE21B72F1C00940099 /* Presenters */,
+				FAF02DFB21B72A1100940099 /* Controllers */,
+			);
+			path = SunriseAndSunset;
+			sourceTree = "<group>";
+		};
+		FAF02DFB21B72A1100940099 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FAF02DFC21B72A3F00940099 /* SunriseAndSunsetViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FAF02DFE21B72F1C00940099 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				FAF02E0A21B733FA00940099 /* SunrisePresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		FAF02DFF21B72F2A00940099 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FAF02E0021B72F5100940099 /* SunriseView.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		FAF02E0221B72F6200940099 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FAF02E0621B72FEA00940099 /* GetSunriseSunsetParamaters.swift */,
+				FAF02E0821B7306800940099 /* SunriseSunset.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FAF02E0321B72F7700940099 /* NetworkServices */ = {
+			isa = PBXGroup;
+			children = (
+				FAF02E0421B72FB500940099 /* SunriseSunsetNetworkService.swift */,
+			);
+			path = NetworkServices;
+			sourceTree = "<group>";
+		};
+		FAF02E0C21B7AD0700940099 /* NavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				FAF02E0D21B7AD2F00940099 /* UINavigationBarExtension.swift */,
+			);
+			name = NavigationBar;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA92789721B6A40500F72831 /* TeamvoyTestApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA9278AA21B6A40800F72831 /* Build configuration list for PBXNativeTarget "TeamvoyTestApp" */;
+			buildPhases = (
+				3F983F55EB6AB7B253E7EADF /* [CP] Check Pods Manifest.lock */,
+				FA92789421B6A40500F72831 /* Sources */,
+				FA92789521B6A40500F72831 /* Frameworks */,
+				FA92789621B6A40500F72831 /* Resources */,
+				FC594BC3F4ADE93EEA31FC6E /* [CP] Embed Pods Frameworks */,
+				6C099BBCEA4773148016CD01 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TeamvoyTestApp;
+			productName = TeamvoyTestApp;
+			productReference = FA92789821B6A40500F72831 /* TeamvoyTestApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA92789021B6A40500F72831 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = alex;
+				TargetAttributes = {
+					FA92789721B6A40500F72831 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = FA92789321B6A40500F72831 /* Build configuration list for PBXProject "TeamvoyTestApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				sv,
+			);
+			mainGroup = FA92788F21B6A40500F72831;
+			productRefGroup = FA92789921B6A40500F72831 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA92789721B6A40500F72831 /* TeamvoyTestApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA92789621B6A40500F72831 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA9278A621B6A40800F72831 /* LaunchScreen.storyboard in Resources */,
+				FA9278A321B6A40800F72831 /* Assets.xcassets in Resources */,
+				FA9278A121B6A40500F72831 /* Main.storyboard in Resources */,
+				FAF02DF621B7162200940099 /* MapInfoWindowView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3F983F55EB6AB7B253E7EADF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TeamvoyTestApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C099BBCEA4773148016CD01 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TeamvoyTestApp/Pods-TeamvoyTestApp-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TeamvoyTestApp/Pods-TeamvoyTestApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC594BC3F4ADE93EEA31FC6E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TeamvoyTestApp/Pods-TeamvoyTestApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TeamvoyTestApp/Pods-TeamvoyTestApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA92789421B6A40500F72831 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA927B6921B6A4B800F72831 /* StoryboardExtension.swift in Sources */,
+				FAF02DE421B6F9C100940099 /* ProgressHUDProtocol.swift in Sources */,
+				FAF02E0521B72FB500940099 /* SunriseSunsetNetworkService.swift in Sources */,
+				FAF02DEB21B70AC900940099 /* UIViewExtension.swift in Sources */,
+				FAF02DF121B70EBA00940099 /* Place.swift in Sources */,
+				FAF02DFD21B72A3F00940099 /* SunriseAndSunsetViewController.swift in Sources */,
+				FAF02E0B21B733FA00940099 /* SunrisePresenter.swift in Sources */,
+				FA927A6121B6A4B700F72831 /* RequestGenerator.swift in Sources */,
+				FA927A6221B6A4B700F72831 /* APIClientProtocol.swift in Sources */,
+				FAF02DE621B6FB1100940099 /* LocationHelper.swift in Sources */,
+				FA927B4521B6A4B800F72831 /* StoryboardIdentifiable.swift in Sources */,
+				FAF02DDE21B6EEC500940099 /* GoogleMapHelper.swift in Sources */,
+				FA927B4A21B6A4B800F72831 /* AlertDisplayable.swift in Sources */,
+				FA927B6F21B6A4B800F72831 /* ViewControllerExtension.swift in Sources */,
+				FAF02DE221B6F18C00940099 /* GoogleKeysService.swift in Sources */,
+				FAF02E0121B72F5100940099 /* SunriseView.swift in Sources */,
+				FAF02DEE21B70B3600940099 /* TextFiledExtension.swift in Sources */,
+				FA92789E21B6A40500F72831 /* MapViewController.swift in Sources */,
+				FAF02E0721B72FEA00940099 /* GetSunriseSunsetParamaters.swift in Sources */,
+				FAF02DF821B716FB00940099 /* NibLodableView.swift in Sources */,
+				FA927A6421B6A4B700F72831 /* EndPointProtocol.swift in Sources */,
+				FA927A6321B6A4B700F72831 /* APIRequestProtocol.swift in Sources */,
+				FAF02DE821B700E800940099 /* AutocompliteService.swift in Sources */,
+				FAF02E0E21B7AD2F00940099 /* UINavigationBarExtension.swift in Sources */,
+				FA927A6521B6A4B700F72831 /* ApiParametersProtocol.swift in Sources */,
+				FA927B7221B6A4B800F72831 /* StringExtension.swift in Sources */,
+				FAF02E0921B7306800940099 /* SunriseSunset.swift in Sources */,
+				FA92789C21B6A40500F72831 /* AppDelegate.swift in Sources */,
+				FAF02DF421B715F500940099 /* MapInfoWindowView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FA92789F21B6A40500F72831 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA9278A021B6A40500F72831 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FA9278A421B6A40800F72831 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA9278A521B6A40800F72831 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA9278A821B6A40800F72831 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA9278A921B6A40800F72831 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA9278AB21B6A40800F72831 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E0F789C181060AB96C0D239 /* Pods-TeamvoyTestApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/TeamvoyTestApp/SupportingFiles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alex.TeamvoyTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA9278AC21B6A40800F72831 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2DB3ABA428C3543D0A3CEFE /* Pods-TeamvoyTestApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/TeamvoyTestApp/SupportingFiles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alex.TeamvoyTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA92789321B6A40500F72831 /* Build configuration list for PBXProject "TeamvoyTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA9278A821B6A40800F72831 /* Debug */,
+				FA9278A921B6A40800F72831 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA9278AA21B6A40800F72831 /* Build configuration list for PBXNativeTarget "TeamvoyTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA9278AB21B6A40800F72831 /* Debug */,
+				FA9278AC21B6A40800F72831 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA92789021B6A40500F72831 /* Project object */;
+}
