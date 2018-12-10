@@ -46,6 +46,8 @@
 /* Begin PBXFileReference section */
 		7D5FFD7003321EF8EFD393BF /* Pods_TeamvoyTestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeamvoyTestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2725E8717F61801C4A4E55C /* Pods-TeamvoyTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeamvoyTestApp.release.xcconfig"; path = "Target Support Files/Pods-TeamvoyTestApp/Pods-TeamvoyTestApp.release.xcconfig"; sourceTree = "<group>"; };
+		CC9A02325238CB92384B38FB /* Pods-TeamvoyTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeamvoyTestApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TeamvoyTestApp/Pods-TeamvoyTestApp.debug.xcconfig"; sourceTree = "<group>"; };
+		F1C8417EB35A7EF9D177FEDD /* Pods-TeamvoyTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeamvoyTestApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-TeamvoyTestApp/Pods-TeamvoyTestApp.release.xcconfig"; sourceTree = "<group>"; };
 		FA92789821B6A40500F72831 /* TeamvoyTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeamvoyTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA92789B21B6A40500F72831 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA92789D21B6A40500F72831 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +111,8 @@
 			children = (
 				FF3C02BD85DD02C62DC7DB5D /* Pods-TeamvoyTestApp.debug.xcconfig */,
 				C2725E8717F61801C4A4E55C /* Pods-TeamvoyTestApp.release.xcconfig */,
+				CC9A02325238CB92384B38FB /* Pods-TeamvoyTestApp.debug.xcconfig */,
+				F1C8417EB35A7EF9D177FEDD /* Pods-TeamvoyTestApp.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -467,7 +471,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TeamvoyTestApp/Pods-TeamvoyTestApp-resources.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-TeamvoyTestApp/Pods-TeamvoyTestApp-resources.sh",
 				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
 				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
 			);
@@ -480,7 +484,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TeamvoyTestApp/Pods-TeamvoyTestApp-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TeamvoyTestApp/Pods-TeamvoyTestApp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F7A9FF0AE2414473722A9E6F /* [CP] Embed Pods Frameworks */ = {
@@ -491,7 +495,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TeamvoyTestApp/Pods-TeamvoyTestApp-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-TeamvoyTestApp/Pods-TeamvoyTestApp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 			);
@@ -504,7 +508,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TeamvoyTestApp/Pods-TeamvoyTestApp-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TeamvoyTestApp/Pods-TeamvoyTestApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -686,7 +690,7 @@
 		};
 		FA9278AB21B6A40800F72831 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FF3C02BD85DD02C62DC7DB5D /* Pods-TeamvoyTestApp.debug.xcconfig */;
+			baseConfigurationReference = CC9A02325238CB92384B38FB /* Pods-TeamvoyTestApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -707,7 +711,7 @@
 		};
 		FA9278AC21B6A40800F72831 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C2725E8717F61801C4A4E55C /* Pods-TeamvoyTestApp.release.xcconfig */;
+			baseConfigurationReference = F1C8417EB35A7EF9D177FEDD /* Pods-TeamvoyTestApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
