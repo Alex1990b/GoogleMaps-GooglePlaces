@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F1BBAB7A19C9C5CC58E32E95 /* Pods_TeamvoyTestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15CBC5C283932C3D7D60E88B /* Pods_TeamvoyTestApp.framework */; };
+		43868AB169AD777DAA5D1320 /* Pods_TeamvoyTestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D5FFD7003321EF8EFD393BF /* Pods_TeamvoyTestApp.framework */; };
 		FA92789C21B6A40500F72831 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA92789B21B6A40500F72831 /* AppDelegate.swift */; };
 		FA92789E21B6A40500F72831 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA92789D21B6A40500F72831 /* MapViewController.swift */; };
 		FA9278A121B6A40500F72831 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA92789F21B6A40500F72831 /* Main.storyboard */; };
@@ -44,9 +44,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0E0F789C181060AB96C0D239 /* Pods-TeamvoyTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeamvoyTestApp.debug.xcconfig"; path = "Target Support Files/Pods-TeamvoyTestApp/Pods-TeamvoyTestApp.debug.xcconfig"; sourceTree = "<group>"; };
-		15CBC5C283932C3D7D60E88B /* Pods_TeamvoyTestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeamvoyTestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C2DB3ABA428C3543D0A3CEFE /* Pods-TeamvoyTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeamvoyTestApp.release.xcconfig"; path = "Target Support Files/Pods-TeamvoyTestApp/Pods-TeamvoyTestApp.release.xcconfig"; sourceTree = "<group>"; };
+		7D5FFD7003321EF8EFD393BF /* Pods_TeamvoyTestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeamvoyTestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2725E8717F61801C4A4E55C /* Pods-TeamvoyTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeamvoyTestApp.release.xcconfig"; path = "Target Support Files/Pods-TeamvoyTestApp/Pods-TeamvoyTestApp.release.xcconfig"; sourceTree = "<group>"; };
 		FA92789821B6A40500F72831 /* TeamvoyTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeamvoyTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA92789B21B6A40500F72831 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA92789D21B6A40500F72831 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +81,7 @@
 		FAF02E0821B7306800940099 /* SunriseSunset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunriseSunset.swift; sourceTree = "<group>"; };
 		FAF02E0A21B733FA00940099 /* SunrisePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunrisePresenter.swift; sourceTree = "<group>"; };
 		FAF02E0D21B7AD2F00940099 /* UINavigationBarExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationBarExtension.swift; sourceTree = "<group>"; };
+		FF3C02BD85DD02C62DC7DB5D /* Pods-TeamvoyTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeamvoyTestApp.debug.xcconfig"; path = "Target Support Files/Pods-TeamvoyTestApp/Pods-TeamvoyTestApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,17 +89,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1BBAB7A19C9C5CC58E32E95 /* Pods_TeamvoyTestApp.framework in Frameworks */,
+				43868AB169AD777DAA5D1320 /* Pods_TeamvoyTestApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		586DE28EC9530FB27FA7A49C /* Frameworks */ = {
+		14ED9450A06BA7EFA58EF885 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				15CBC5C283932C3D7D60E88B /* Pods_TeamvoyTestApp.framework */,
+				7D5FFD7003321EF8EFD393BF /* Pods_TeamvoyTestApp.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -107,8 +107,8 @@
 		D5CB7229A8A7E7A52E0C9CCC /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0E0F789C181060AB96C0D239 /* Pods-TeamvoyTestApp.debug.xcconfig */,
-				C2DB3ABA428C3543D0A3CEFE /* Pods-TeamvoyTestApp.release.xcconfig */,
+				FF3C02BD85DD02C62DC7DB5D /* Pods-TeamvoyTestApp.debug.xcconfig */,
+				C2725E8717F61801C4A4E55C /* Pods-TeamvoyTestApp.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -119,7 +119,7 @@
 				FA92789A21B6A40500F72831 /* TeamvoyTestApp */,
 				FA92789921B6A40500F72831 /* Products */,
 				D5CB7229A8A7E7A52E0C9CCC /* Pods */,
-				586DE28EC9530FB27FA7A49C /* Frameworks */,
+				14ED9450A06BA7EFA58EF885 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -372,12 +372,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA9278AA21B6A40800F72831 /* Build configuration list for PBXNativeTarget "TeamvoyTestApp" */;
 			buildPhases = (
-				3F983F55EB6AB7B253E7EADF /* [CP] Check Pods Manifest.lock */,
+				37AC6A093A0A8F4B07BD9A95 /* [CP] Check Pods Manifest.lock */,
 				FA92789421B6A40500F72831 /* Sources */,
 				FA92789521B6A40500F72831 /* Frameworks */,
 				FA92789621B6A40500F72831 /* Resources */,
-				FC594BC3F4ADE93EEA31FC6E /* [CP] Embed Pods Frameworks */,
-				6C099BBCEA4773148016CD01 /* [CP] Copy Pods Resources */,
+				F7A9FF0AE2414473722A9E6F /* [CP] Embed Pods Frameworks */,
+				B8240B29102654B66238A27D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -437,7 +437,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3F983F55EB6AB7B253E7EADF /* [CP] Check Pods Manifest.lock */ = {
+		37AC6A093A0A8F4B07BD9A95 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -459,7 +459,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6C099BBCEA4773148016CD01 /* [CP] Copy Pods Resources */ = {
+		B8240B29102654B66238A27D /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -483,7 +483,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TeamvoyTestApp/Pods-TeamvoyTestApp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FC594BC3F4ADE93EEA31FC6E /* [CP] Embed Pods Frameworks */ = {
+		F7A9FF0AE2414473722A9E6F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -686,7 +686,7 @@
 		};
 		FA9278AB21B6A40800F72831 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0E0F789C181060AB96C0D239 /* Pods-TeamvoyTestApp.debug.xcconfig */;
+			baseConfigurationReference = FF3C02BD85DD02C62DC7DB5D /* Pods-TeamvoyTestApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -707,7 +707,7 @@
 		};
 		FA9278AC21B6A40800F72831 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C2DB3ABA428C3543D0A3CEFE /* Pods-TeamvoyTestApp.release.xcconfig */;
+			baseConfigurationReference = C2725E8717F61801C4A4E55C /* Pods-TeamvoyTestApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
