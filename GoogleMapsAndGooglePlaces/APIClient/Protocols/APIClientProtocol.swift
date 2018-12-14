@@ -7,9 +7,8 @@
 //
 
 import Alamofire
-import SVProgressHUD
 
-protocol APIClientProtocol: ProgressHudProtocol {
+protocol APIClientProtocol: ProgressShowable {
     func fetch<T: APIRequestProtocol>(request: T, isShowProgressHud: Bool, completion: @escaping (T.ResponseType?,_ error: Error?) -> ())
 }
 
