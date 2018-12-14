@@ -14,7 +14,7 @@ final class SunrisePresenter {
     
     weak var delegate: (SunriseView & AlertDisplayable)?
     
-    func fetchSunrice(for place: Place) {
+    func fetchSunrise(for place: Place) {
         let parameters = GetSunriseSunsetParamaters(latitude: place.latitude, longitude: place.longitude)
         newtworkService.fetchSunriseSunset(parameters: parameters) { [weak self] (response, error) in
             if let error = error {

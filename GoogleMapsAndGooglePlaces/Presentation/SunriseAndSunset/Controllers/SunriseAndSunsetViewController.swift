@@ -40,7 +40,7 @@ final class SunriseAndSunsetViewController: UIViewController {
         configureNavigationBar()
         presenter.delegate = self
         if let place = place {
-             presenter.fetchSunrice(for: place)
+             presenter.fetchSunrise(for: place)
         }
     }
     
