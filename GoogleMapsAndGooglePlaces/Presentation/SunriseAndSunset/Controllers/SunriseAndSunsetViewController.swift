@@ -30,15 +30,18 @@ final class SunriseAndSunsetViewController: UIViewController {
     
     //MARK: Variables
     
-    var place: Place!
+    var place: Place?
     
     //MARK: SunriseAndSunsetViewController Lify Cicle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        presenter.delegate = self
-        presenter.fetchSunrice(for: place)
+        
         configureNavigationBar()
+        presenter.delegate = self
+        if let place = place {
+             presenter.fetchSunrice(for: place)
+        }
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -69,7 +72,7 @@ extension SunriseAndSunsetViewController: SunriseView {
 
 private extension SunriseAndSunsetViewController {
     func configureNavigationBar() {
-        title = place.name
+        title = place?.name
         navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
         navigationController?.navigationBar.tintColor = .white
         navigationController?.navigationBar.topItem?.title = ""
