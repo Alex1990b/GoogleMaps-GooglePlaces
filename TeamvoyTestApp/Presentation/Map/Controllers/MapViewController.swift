@@ -10,15 +10,21 @@ import UIKit
 
 final class MapViewController: UIViewController {
     
+    //MARK: @IBOutlets
+    
     @IBOutlet private weak var selectLocationTextField: UITextField!
     @IBOutlet private weak var mapConteinerView: UIView!
+    
+    //MARK: Constants
     
     private let googleMapsHelper = GoogleMapsHelper()
     private let autocompliteService = AutocompliteService()
     
+    //MARK: MapViewController Lify Cicle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        googleMapsHelper.addMapView(on: mapConteinerView)
+        googleMapsHelper.addMap(on: mapConteinerView)
         listenGoogleMapsHelperCallback()
         autocompliteService.delegate = self
     }
@@ -34,34 +40,40 @@ final class MapViewController: UIViewController {
     }
 }
 
+//MARK: UITextFieldDelegate
+
 extension MapViewController: UITextFieldDelegate {
     func textFieldDidBeginEditing(_ textField: UITextField) {
-        present(autocompliteService.atocompleteViewController, animated: true, completion: nil)
+        present(autocompliteService.autocompleteViewController, animated: true, completion: nil)
     }
 }
 
-extension MapViewController: Autocomplitable {
-    func didAutocompleteWith(place: Place) {
-        selectLocationTextField.text = place.name
-        dismiss(animated: true) {
-            self.googleMapsHelper.showPlaceMarker(place)
-            self.googleMapsHelper.animateToLocation(place: place)
-        }
-    }
-    
+//MARK: AutoComplitable
+
+extension MapViewController: AutoComplitable {
     func wasCancelled() {
         selectLocationTextField.text = ""
         dismiss(animated: true, completion: nil)
     }
+    
+    func didAutocomplete(with place: Place) {
+        selectLocationTextField.text = place.name
+        dismiss(animated: true) {
+            self.googleMapsHelper.showMarker(at: place)
+            self.googleMapsHelper.animate(to: place)
+        }
+    }
 }
+
+//MARK: Private Methods
 
 private extension MapViewController {
     func listenGoogleMapsHelperCallback() {
         googleMapsHelper.infoWindowDidTapped = { [weak self] place in
             guard let strSelf = self else { return }
-            let sunriseAndSunsetViewController: SunriseAndSunsetViewController = strSelf.storyboard!.instantiateViewController()
-            sunriseAndSunsetViewController.place = place
-            strSelf.navigationController?.pushViewController(sunriseAndSunsetViewController, animated: true)
+            let vc: SunriseAndSunsetViewController = strSelf.storyboard!.instantiateViewController()
+            vc.place = place
+            strSelf.navigationController?.pushViewController(vc, animated: true)
         }
     }
 }

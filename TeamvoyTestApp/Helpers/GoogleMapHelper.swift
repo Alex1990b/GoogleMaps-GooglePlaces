@@ -10,18 +10,25 @@ import GoogleMaps
 
 final class GoogleMapsHelper: NSObject {
     
+    //MARK: Constants
+    
+    private let locationHelper = LocationHelper()
+    
+    //MARK: Variables
+    
     private var mapView: GMSMapView!
     private var currentMarker: GMSMarker?
     private var currentPlace: Place?
-    private let locationHelper = LocationHelper()
     private var isMyLocationTapped = false
    
     var infoWindowDidTapped: ((_ place: Place?) -> ())?
+    
+    //MARK: Public methods
         
-    func addMapView(on containerMapView: UIView) {
+    func addMap(on view: UIView) {
       
         mapView = GMSMapView(frame: CGRect(origin: CGPoint.zero,
-                                           size: containerMapView.frame.size))
+                                           size: view.frame.size))
         mapView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         
         mapView.mapType = .normal
@@ -29,15 +36,19 @@ final class GoogleMapsHelper: NSObject {
         mapView.settings.myLocationButton = true
         mapView.delegate = self
         locationHelper.delegate = self
-        containerMapView.addSubview(mapView)
+        view.addSubview(mapView)
     }
     
-    func animateToLocation(place: Place, zoom: Float = 12) {
+    func animate(to place: Place, zoom: Float = 12) {
         
         currentMarker = nil
         
-        let  startedCameraPosition = GMSCameraPosition.camera(withLatitude:  mapView.camera.target.latitude, longitude: mapView.camera.target.longitude, zoom: mapView.minZoom)
-        let  finalCameraPosition = GMSCameraPosition.camera(withLatitude: place.latitude, longitude: place.longitude, zoom: zoom)
+        let  startedCameraPosition = GMSCameraPosition.camera(withLatitude: mapView.camera.target.latitude,
+                                                              longitude: mapView.camera.target.longitude,
+                                                              zoom: mapView.minZoom)
+        let  finalCameraPosition = GMSCameraPosition.camera(withLatitude: place.latitude,
+                                                            longitude: place.longitude,
+                                                            zoom: zoom)
         
         mapView.camera = startedCameraPosition
         
@@ -47,25 +58,31 @@ final class GoogleMapsHelper: NSObject {
         CATransaction.commit()
     }
     
-    func showPlaceMarker(_ place: Place) {
+    func showMarker(at place: Place) {
         currentPlace = place
         addMarker(latitude: place.latitude, longitude: place.longitude)
     }
 }
 
+//MARK: LocationUpdateDelegate
+
 extension GoogleMapsHelper: LocationUpdateDelegate {
-    func locationDidUpdate(newPlace: Place) {
+    func locationDidUpdate(with newPlace: Place) {
         if isMyLocationTapped {
             currentPlace = newPlace
-            currentMarker?.position = CLLocationCoordinate2D(latitude: newPlace.latitude, longitude: newPlace.longitude)
+            currentMarker?.position = CLLocationCoordinate2D(latitude: newPlace.latitude,
+                                                             longitude: newPlace.longitude)
         }
     }
 }
 
+//MARK: GMSMapViewDelegate
+
 extension GoogleMapsHelper: GMSMapViewDelegate {
     
     func didTapMyLocationButton(for mapView: GMSMapView) -> Bool {
-        addMarker(latitude: locationHelper.myLocation?.coordinate.latitude ?? 0, longitude: locationHelper.myLocation?.coordinate.longitude ?? 0)
+        addMarker(latitude: locationHelper.myLocation?.coordinate.latitude ?? 0,
+                  longitude: locationHelper.myLocation?.coordinate.longitude ?? 0)
         isMyLocationTapped = true
         return false
     }
@@ -86,6 +103,8 @@ extension GoogleMapsHelper: GMSMapViewDelegate {
         infoWindowDidTapped?(currentPlace)
     }
 }
+
+//MARK: Private methods
 
 private extension GoogleMapsHelper {
     func addMarker(latitude: Double, longitude: Double ) {

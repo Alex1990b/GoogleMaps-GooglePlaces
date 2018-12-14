@@ -10,6 +10,8 @@ import UIKit
 
 final class MapInfoWindowView: UIView, NibLoadableView {
     
+    //MARK:  @IBOutlets
+    
     @IBOutlet private weak var placeNameLabel: UILabel!
     @IBOutlet private weak var placeAdressLabel: UILabel!
     
@@ -22,13 +24,17 @@ final class MapInfoWindowView: UIView, NibLoadableView {
         setFrame()
     }
     
+    //MARK:  Variables
+    
     var place: Place? {
         didSet {
             placeNameLabel.text = place?.name
-            placeAdressLabel.text = place?.adress
+            placeAdressLabel.text = place?.address
         }
     }
 }
+
+//MARK:  Private methods
 
 private extension MapInfoWindowView {
     func setFrame() {

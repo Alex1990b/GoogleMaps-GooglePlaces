@@ -8,22 +8,26 @@
 
 import GooglePlaces
 
-protocol Autocomplitable: class  {
-    func didAutocompleteWith(place: Place)
+protocol AutoComplitable: class  {
+    func didAutocomplete(with place: Place)
     func wasCancelled()
 }
 
 final class AutocompliteService: NSObject {
     
-    private(set) var atocompleteViewController = GMSAutocompleteViewController()
+    //MARK: Variables
     
-    weak var delegate: (Autocomplitable & AlertDisplayable)?
+    private(set) var autocompleteViewController = GMSAutocompleteViewController()
+    
+    weak var delegate: (AutoComplitable & AlertDisplayable)?
     
     override init() {
         super.init()
-        atocompleteViewController.delegate = self
+        autocompleteViewController.delegate = self
     }
 }
+
+//MARK: GMSAutocompleteViewControllerDelegate
 
 extension AutocompliteService: GMSAutocompleteViewControllerDelegate {
     func viewController(_ viewController: GMSAutocompleteViewController, didFailAutocompleteWithError error: Error) {
@@ -31,8 +35,11 @@ extension AutocompliteService: GMSAutocompleteViewControllerDelegate {
     }
     
     func viewController(_ viewController: GMSAutocompleteViewController, didAutocompleteWith place: GMSPlace) {
-        let place = Place(adress: place.formattedAddress ?? "", name: place.name, latitude: place.coordinate.latitude, longitude: place.coordinate.longitude)
-        delegate?.didAutocompleteWith(place: place)
+        let place = Place(address: place.formattedAddress ?? "",
+                          name: place.name,
+                          latitude: place.coordinate.latitude,
+                          longitude: place.coordinate.longitude)
+        delegate?.didAutocomplete(with: place)
     }
     
     func wasCancelled(_ viewController: GMSAutocompleteViewController) {

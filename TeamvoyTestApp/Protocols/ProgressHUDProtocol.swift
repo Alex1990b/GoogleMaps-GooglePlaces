@@ -8,12 +8,12 @@
 
 import SVProgressHUD
 
-protocol ProgressHudProtocol {
+protocol ProgressShowable {
     func show()
     func close()
 }
 
-extension ProgressHudProtocol {
+extension ProgressShowable {
     func show() {
         SVProgressHUD.show()
     }

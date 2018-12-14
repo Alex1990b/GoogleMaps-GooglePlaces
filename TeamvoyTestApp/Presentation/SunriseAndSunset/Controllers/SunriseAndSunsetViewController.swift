@@ -10,6 +10,8 @@ import UIKit
 
 final class SunriseAndSunsetViewController: UIViewController {
     
+    //MARK: @IBOutlets
+    
     @IBOutlet private weak var dayLenghtLabel: UILabel!
     @IBOutlet private weak var civilTwilightBeginLabel: UILabel!
     @IBOutlet private weak var sunriseLabel: UILabel!
@@ -21,15 +23,21 @@ final class SunriseAndSunsetViewController: UIViewController {
     @IBOutlet private weak var astronomicalTwilightBeginLabel: UILabel!
     @IBOutlet private weak var nauticalTwilightEndLabel: UILabel!
     
+    //MARK: Constants
+    
     private let presenter = SunrisePresenter()
     private let defaultText = "No info"
     
+    //MARK: Variables
+    
     var place: Place!
+    
+    //MARK: SunriseAndSunsetViewController Lify Cicle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter.delegate = self
-        presenter.fetchSunriceFor(place: place)
+        presenter.fetchSunrice(for: place)
         configureNavigationBar()
     }
     
@@ -38,6 +46,8 @@ final class SunriseAndSunsetViewController: UIViewController {
         navigationController?.setNavigationBarHidden(true, animated: false)
     }
 }
+
+//MARK: SunriseView Delegate
 
 extension SunriseAndSunsetViewController: SunriseView {
     func update(with data: SunriseSunsetResponse.SunriseSunset) {
@@ -54,6 +64,8 @@ extension SunriseAndSunsetViewController: SunriseView {
         astronomicalTwilightBeginLabel.text = data.astronomicalTwilightBegin?.UTCToLocal() ?? defaultText
     }
 }
+
+//MARK: Private Methods
 
 private extension SunriseAndSunsetViewController {
     func configureNavigationBar() {

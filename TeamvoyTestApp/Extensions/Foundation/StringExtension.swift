@@ -10,16 +10,17 @@ import UIKit
 
 extension String {
     
-    func UTCToLocal(incomingFormat: String? = "h:mm:ss a", outGoingFormat: String? = "h:mm:ss a") -> String {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = incomingFormat
+    func UTCToLocal(incomingFormat: DateFormatType = DateFormatType.hmmss_a,
+                    outGoingFormat: DateFormatType = DateFormatType.hmmss_a) -> String {
+        
+        let dateFormatter = DateFormatter.dateFormatter(with: incomingFormat)
         dateFormatter.timeZone = TimeZone(abbreviation: "UTC")
         
-        let dt = dateFormatter.date(from: self)
+        let date = dateFormatter.date(from: self)
         dateFormatter.timeZone = TimeZone.current
-        dateFormatter.dateFormat = outGoingFormat
+        dateFormatter.dateFormat = outGoingFormat.rawValue
         
-        return dateFormatter.string(from: dt ?? Date())
+        return dateFormatter.string(from: date ?? Date())
     }
 }
 

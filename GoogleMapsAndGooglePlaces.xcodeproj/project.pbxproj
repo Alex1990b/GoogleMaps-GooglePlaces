@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		43868AB169AD777DAA5D1320 /* Pods_TeamvoyTestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D5FFD7003321EF8EFD393BF /* Pods_TeamvoyTestApp.framework */; };
+		D9879F1E21C3B519008800D1 /* DateFormatterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9879F1D21C3B519008800D1 /* DateFormatterExtension.swift */; };
 		FA92789C21B6A40500F72831 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA92789B21B6A40500F72831 /* AppDelegate.swift */; };
 		FA92789E21B6A40500F72831 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA92789D21B6A40500F72831 /* MapViewController.swift */; };
 		FA9278A121B6A40500F72831 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA92789F21B6A40500F72831 /* Main.storyboard */; };
@@ -47,8 +48,9 @@
 		7D5FFD7003321EF8EFD393BF /* Pods_TeamvoyTestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeamvoyTestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2725E8717F61801C4A4E55C /* Pods-TeamvoyTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeamvoyTestApp.release.xcconfig"; path = "Target Support Files/Pods-TeamvoyTestApp/Pods-TeamvoyTestApp.release.xcconfig"; sourceTree = "<group>"; };
 		CC9A02325238CB92384B38FB /* Pods-TeamvoyTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeamvoyTestApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TeamvoyTestApp/Pods-TeamvoyTestApp.debug.xcconfig"; sourceTree = "<group>"; };
+		D9879F1D21C3B519008800D1 /* DateFormatterExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterExtension.swift; sourceTree = "<group>"; };
 		F1C8417EB35A7EF9D177FEDD /* Pods-TeamvoyTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeamvoyTestApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-TeamvoyTestApp/Pods-TeamvoyTestApp.release.xcconfig"; sourceTree = "<group>"; };
-		FA92789821B6A40500F72831 /* TeamvoyTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeamvoyTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA92789821B6A40500F72831 /* GoogleMapsAndGooglePlaces.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleMapsAndGooglePlaces.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA92789B21B6A40500F72831 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA92789D21B6A40500F72831 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		FA9278A021B6A40500F72831 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -130,7 +132,7 @@
 		FA92789921B6A40500F72831 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FA92789821B6A40500F72831 /* TeamvoyTestApp.app */,
+				FA92789821B6A40500F72831 /* GoogleMapsAndGooglePlaces.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -240,6 +242,7 @@
 			isa = PBXGroup;
 			children = (
 				FA927A5D21B6A4B700F72831 /* StringExtension.swift */,
+				D9879F1D21C3B519008800D1 /* DateFormatterExtension.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -372,9 +375,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FA92789721B6A40500F72831 /* TeamvoyTestApp */ = {
+		FA92789721B6A40500F72831 /* GoogleMapsAndGooglePlaces */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FA9278AA21B6A40800F72831 /* Build configuration list for PBXNativeTarget "TeamvoyTestApp" */;
+			buildConfigurationList = FA9278AA21B6A40800F72831 /* Build configuration list for PBXNativeTarget "GoogleMapsAndGooglePlaces" */;
 			buildPhases = (
 				37AC6A093A0A8F4B07BD9A95 /* [CP] Check Pods Manifest.lock */,
 				FA92789421B6A40500F72831 /* Sources */,
@@ -387,9 +390,9 @@
 			);
 			dependencies = (
 			);
-			name = TeamvoyTestApp;
+			name = GoogleMapsAndGooglePlaces;
 			productName = TeamvoyTestApp;
-			productReference = FA92789821B6A40500F72831 /* TeamvoyTestApp.app */;
+			productReference = FA92789821B6A40500F72831 /* GoogleMapsAndGooglePlaces.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -407,7 +410,7 @@
 					};
 				};
 			};
-			buildConfigurationList = FA92789321B6A40500F72831 /* Build configuration list for PBXProject "TeamvoyTestApp" */;
+			buildConfigurationList = FA92789321B6A40500F72831 /* Build configuration list for PBXProject "GoogleMapsAndGooglePlaces" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -421,7 +424,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FA92789721B6A40500F72831 /* TeamvoyTestApp */,
+				FA92789721B6A40500F72831 /* GoogleMapsAndGooglePlaces */,
 			);
 		};
 /* End PBXProject section */
@@ -446,15 +449,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-TeamvoyTestApp-checkManifestLockResult.txt",
 			);
@@ -468,23 +467,19 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-TeamvoyTestApp/Pods-TeamvoyTestApp-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-TeamvoyTestApp/Pods-TeamvoyTestApp-resources.sh",
 				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
 				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TeamvoyTestApp/Pods-TeamvoyTestApp-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TeamvoyTestApp/Pods-TeamvoyTestApp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F7A9FF0AE2414473722A9E6F /* [CP] Embed Pods Frameworks */ = {
@@ -492,23 +487,19 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-TeamvoyTestApp/Pods-TeamvoyTestApp-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-TeamvoyTestApp/Pods-TeamvoyTestApp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TeamvoyTestApp/Pods-TeamvoyTestApp-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TeamvoyTestApp/Pods-TeamvoyTestApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -520,6 +511,7 @@
 			files = (
 				FA927B6921B6A4B800F72831 /* StoryboardExtension.swift in Sources */,
 				FAF02DE421B6F9C100940099 /* ProgressHUDProtocol.swift in Sources */,
+				D9879F1E21C3B519008800D1 /* DateFormatterExtension.swift in Sources */,
 				FAF02E0521B72FB500940099 /* SunriseSunsetNetworkService.swift in Sources */,
 				FAF02DEB21B70AC900940099 /* UIViewExtension.swift in Sources */,
 				FAF02DF121B70EBA00940099 /* Place.swift in Sources */,
@@ -690,42 +682,44 @@
 		};
 		FA9278AB21B6A40800F72831 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CC9A02325238CB92384B38FB /* Pods-TeamvoyTestApp.debug.xcconfig */;
+			baseConfigurationReference = FF3C02BD85DD02C62DC7DB5D /* Pods-TeamvoyTestApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 44Y6NR8VT8;
 				INFOPLIST_FILE = "$(SRCROOT)/TeamvoyTestApp/SupportingFiles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.alex.TeamvoyTestApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alex.googleMaps;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		FA9278AC21B6A40800F72831 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F1C8417EB35A7EF9D177FEDD /* Pods-TeamvoyTestApp.release.xcconfig */;
+			baseConfigurationReference = C2725E8717F61801C4A4E55C /* Pods-TeamvoyTestApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 44Y6NR8VT8;
 				INFOPLIST_FILE = "$(SRCROOT)/TeamvoyTestApp/SupportingFiles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.alex.TeamvoyTestApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alex.googleMaps;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -733,7 +727,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FA92789321B6A40500F72831 /* Build configuration list for PBXProject "TeamvoyTestApp" */ = {
+		FA92789321B6A40500F72831 /* Build configuration list for PBXProject "GoogleMapsAndGooglePlaces" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FA9278A821B6A40800F72831 /* Debug */,
@@ -742,7 +736,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FA9278AA21B6A40800F72831 /* Build configuration list for PBXNativeTarget "TeamvoyTestApp" */ = {
+		FA9278AA21B6A40800F72831 /* Build configuration list for PBXNativeTarget "GoogleMapsAndGooglePlaces" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FA9278AB21B6A40800F72831 /* Debug */,

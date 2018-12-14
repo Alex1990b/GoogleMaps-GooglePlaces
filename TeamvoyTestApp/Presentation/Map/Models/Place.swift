@@ -9,7 +9,7 @@
 import Foundation
 
 struct Place {
-    let adress: String
+    let address: String
     let name: String
     let latitude: Double
     let longitude: Double

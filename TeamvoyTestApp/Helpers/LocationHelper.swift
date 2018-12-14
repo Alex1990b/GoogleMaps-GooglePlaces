@@ -9,13 +9,17 @@
 import CoreLocation
 
 protocol LocationUpdateDelegate: class {
-    func locationDidUpdate(newPlace: Place)
+    func locationDidUpdate(with: Place)
 }
 
 final class LocationHelper: NSObject {
     
+    //MARK: Constants
+    
     private let locationManager = CLLocationManager()
     private let geocoder = CLGeocoder()
+    
+    //MARK: Variables
     
     var myLocation: CLLocation? {
         return locationManager.location
@@ -30,14 +34,16 @@ final class LocationHelper: NSObject {
     }
 }
 
+ //MARK: CLLocationManagerDelegate
+
 extension LocationHelper: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
         guard let lastLocation = locations.last else { return }
         geocoder.reverseGeocodeLocation(lastLocation, completionHandler: { [weak self] placemarks, error  in
             if let placemarks = placemarks, let lastPlacemark = placemarks.last {
-                let place = Place(adress: lastPlacemark.administrativeArea ?? "", name: lastPlacemark.locality ?? "", latitude: lastPlacemark.location?.coordinate.latitude ?? 0, longitude: lastPlacemark.location?.coordinate.longitude ?? 0)
-                self?.delegate?.locationDidUpdate(newPlace: place)
+                let place = Place(address: lastPlacemark.administrativeArea ?? "", name: lastPlacemark.locality ?? "", latitude: lastPlacemark.location?.coordinate.latitude ?? 0, longitude: lastPlacemark.location?.coordinate.longitude ?? 0)
+                self?.delegate?.locationDidUpdate(with: place)
             }
         })
     }
