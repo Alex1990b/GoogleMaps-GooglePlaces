@@ -122,7 +122,7 @@
 		FA92788F21B6A40500F72831 = {
 			isa = PBXGroup;
 			children = (
-				FA92789A21B6A40500F72831 /* TeamvoyTestApp */,
+				FA92789A21B6A40500F72831 /* GoogleMapsAndGooglePlaces */,
 				FA92789921B6A40500F72831 /* Products */,
 				D5CB7229A8A7E7A52E0C9CCC /* Pods */,
 				14ED9450A06BA7EFA58EF885 /* Frameworks */,
@@ -137,7 +137,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FA92789A21B6A40500F72831 /* TeamvoyTestApp */ = {
+		FA92789A21B6A40500F72831 /* GoogleMapsAndGooglePlaces */ = {
 			isa = PBXGroup;
 			children = (
 				FAF02DC821B6E6E200940099 /* Helpers */,
@@ -147,7 +147,7 @@
 				FA9278B721B6A4B400F72831 /* Presentation */,
 				FA9278AD21B6A43100F72831 /* SupportingFiles */,
 			);
-			path = TeamvoyTestApp;
+			path = GoogleMapsAndGooglePlaces;
 			sourceTree = "<group>";
 		};
 		FA9278AD21B6A43100F72831 /* SupportingFiles */ = {
